@@ -16,7 +16,7 @@
 	<description>Building a CI/CD pipeline with Jenkins</description>
 	<properties>
 		<java.version>11</java.version>
-		<packaging>war</packaging>
+		<start-class>com.simplilearn.Project2Jenkins.Project2JenkinsApplication</start-class>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -27,7 +27,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
-			<!-- <scope>provided</scope> -->
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
