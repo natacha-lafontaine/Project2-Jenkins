@@ -4,7 +4,9 @@ pipeline {
     tools {
         maven "Maven386"
     }
-
+    triggers {
+        pollSCM('@midnight')
+    }
     stages {
         stage('Compile') {
             steps {
