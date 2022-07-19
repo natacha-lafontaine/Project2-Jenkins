@@ -32,7 +32,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                deploy adapters: [tomcat9(credentialsId: 'b1a7aec0-8df5-42cd-a09e-e6f9a5edda90', path: '', url: 'http://ec2-34-226-123-209.compute-1.amazonaws.com:8080/')], contextPath: null, onFailure: false, war: 'target/*.war'
+                deploy adapters: [tomcat9(credentialsId: 'b1a7aec0-8df5-42cd-a09e-e6f9a5edda90', path: '', url: 'http://ec2-54-234-179-12.compute-1.amazonaws.com:8080//')], contextPath: null, onFailure: false, war: 'target/*.war'
             }
         }
     }
